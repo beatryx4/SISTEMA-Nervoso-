@@ -127,3 +127,17 @@ footer {
     margin: 20px 15px;
     padding: 20px;
   }
+  .imagem-texto {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  flex-wrap: wrap;
+  margin-top: 15px;
+}
+
+.imagem-texto img {
+  max-width: 250px;
+  width: 100%;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    }
