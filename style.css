@@ -1,0 +1,86 @@
+/* Reset básico */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background: linear-gradient(135deg, #0a0a23, #001122);
+  color: #eee;
+  line-height: 1.6;
+  padding-top: 60px; /* para menu fixo */
+}
+
+/* Menu fixo no topo */
+header {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background-color: #ff6600;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.7);
+  z-index: 1000;
+}
+
+.menu ul {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+}
+
+.menu ul li {
+  margin: 0 15px;
+}
+
+.menu ul li a {
+  color: #00ffff;
+  text-decoration: none;
+  font-weight: 700;
+  font-size: 1.1rem;
+  padding: 15px 10px;
+  display: block;
+  transition: color 0.3s;
+}
+
+.menu ul li a:hover {
+  color: #fff;
+  text-shadow: 0 0 8px #00ffff;
+}
+
+/* Seções */
+.section {
+  max-width: 900px;
+  margin: 40px auto;
+  padding: 20px;
+  background: #111a2c;
+  border-radius: 8px;
+  box-shadow: 0 0 10px #00ffffaa;
+}
+
+h2 {
+  color: #ff6600;
+  margin-bottom: 15px;
+  text-shadow: 0 0 8px #ff6600;
+}
+
+/* Footer */
+footer {
+  text-align: center;
+  padding: 20px;
+  background: #001122;
+  color: #666;
+  font-size: 0.9rem;
+}
+
+/* Responsividade */
+@media (max-width: 600px) {
+  .menu ul {
+    flex-direction: column;
+  }
+  .menu ul li {
+    margin: 10px 0;
+  }
+  .section {
+    margin: 20px 10px;
+  }
