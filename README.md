@@ -1,5 +1,7 @@
 # O Fascinante Sistema Nervoso
 
+![Banner do Projeto](banner_o-fascinante-sistema-nervoso.png)
+
 Um site interativo e estudantil criado para apresentar curiosidades, funcionamento e mistérios do sistema nervoso humano de forma leve e visual.  
 Desenvolvido por alunos com base no material "O Fascinante Sistema Nervoso".
 
@@ -29,4 +31,4 @@ Uso acadêmico e educacional.
 
 ---
 
-Desenvolvido com HTML, CSS e JavaScript
+Desenvolvido com HTML, CSS e JavaScript.
