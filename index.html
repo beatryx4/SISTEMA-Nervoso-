@@ -11,53 +11,41 @@
 <header>
   <nav class="menu" aria-label="Menu principal">
     <ul>
-      <li><a href="#dor">Dor</a></li>
-      <li><a href="#neuroplasticidade">Neuroplasticidade</a></li>
-      <li><a href="#curiosidades">Curiosidades</a></li>
-      <li><a href="#sonhos">Sonhos</a></li>
-      <li><a href="#emocoes">Emoções</a></li>
-      <li><a href="#neuromitos">Neuromitos</a></li>
-      <li><a href="#quiz">Quiz</a></li>
+      <li><a href="#" onclick="mostrarSecao('introducao')">Início</a></li>
+      <li><a href="#" onclick="mostrarSecao('dor')">Dor</a></li>
+      <li><a href="#" onclick="mostrarSecao('neuroplasticidade')">Neuroplasticidade</a></li>
+      <li><a href="#" onclick="mostrarSecao('curiosidades')">Curiosidades</a></li>
+      <li><a href="#" onclick="mostrarSecao('sonhos')">Sonhos</a></li>
+      <li><a href="#" onclick="mostrarSecao('emocoes')">Emoções</a></li>
+      <li><a href="#" onclick="mostrarSecao('neuromitos')">Neuromitos</a></li>
+      <li><a href="#" onclick="mostrarSecao('quiz')">Quiz</a></li>
     </ul>
   </nav>
 </header>
-<div style="text-align: center; margin: 20px 0;">
-  <button onclick="toggleMusic()">Tocar / Parar Trilha Sonora</button>
-  <audio id="bg-music" loop>
-    <source src="audio/trilha.mp3" type="audio/mpeg">
-    Seu navegador não suporta áudio.
-  </audio>
-</div>
-  <section id="introducao" class="section introducao">
-  <h1>O Fascinante Sistema Nervoso</h1>
-  <p>O sistema nervoso é a rede de controle que rege todas as funções do corpo humano, das ações mais simples aos pensamentos mais complexos.</p>
-  <p>Neste site, exploraremos curiosidades, mistérios e o funcionamento desse sistema vital, com uma abordagem clara e interativa para você descobrir o quanto nosso corpo é incrível.</p>
-  </section>
-  
+
 <main>
-  <section id="dor" class="section">
+  <section id="introducao" class="section">
+    <h1>O Fascinante Sistema Nervoso</h1>
+    <p>O sistema nervoso é a rede de controle que rege todas as funções do corpo humano, das ações mais simples aos pensamentos mais complexos.</p>
+    <p>Neste site, exploraremos curiosidades, mistérios e o funcionamento desse sistema vital, com uma abordagem clara e interativa para você descobrir o quanto nosso corpo é incrível.</p>
+  </section>
+
+  <section id="dor" class="section" style="display:none;">
     <h2>Como a Dor Funciona</h2>
     <p>Terminações nervosas captam estímulos nocivos e enviam sinais ao cérebro para processamento.</p>
     <p>A dor é um mecanismo de proteção que nos alerta sobre danos ao corpo.</p>
     <p><em>Curiosidade:</em> Algumas pessoas sentem dor de forma diferente por causa da genética e experiências pessoais.</p>
   </section>
 
-  <section id="neuroplasticidade" class="section">
+  <section id="neuroplasticidade" class="section" style="display:none;">
     <h2>Neuroplasticidade</h2>
     <p>Neuroplasticidade é a capacidade do cérebro de se adaptar e modificar conexões ao longo da vida.</p>
     <p>Essa característica é fundamental para a aprendizagem, recuperação de lesões e memória.</p>
     <p>Exercícios, experiências e ambiente influenciam diretamente a plasticidade cerebral.</p>
   </section>
 
-  <section id="curiosidades" class="section">
+  <section id="curiosidades" class="section" style="display:none;">
     <h2>Curiosidades Rápidas</h2>
-    <section class="section">
-  <h2>O Cérebro em Ação</h2>
-  <div class="imagem-texto">
-    <img src="imagens/cerebro.jpg" alt="Ilustração do cérebro humano" />
-    <p>O cérebro humano é composto por cerca de 86 bilhões de neurônios e coordena tudo o que fazemos — desde respirar até sentir emoções. Ele está em constante atividade, mesmo durante o sono.</p>
-  </div>
-    </section>
     <ul>
       <li>O cérebro consome cerca de 20% da energia do corpo, mesmo pesando apenas 2% do peso total.</li>
       <li>O corpo reage a estímulos antes mesmo de você estar consciente deles.</li>
@@ -67,7 +55,7 @@
     </ul>
   </section>
 
-  <section id="sonhos" class="section">
+  <section id="sonhos" class="section" style="display:none;">
     <h2>Por que Sonhamos?</h2>
     <ol>
       <li><strong>Teoria da Consolidação:</strong> Sonhos ajudam na organização e fortalecimento das memórias.</li>
@@ -76,14 +64,14 @@
     </ol>
   </section>
 
-  <section id="emocoes" class="section">
+  <section id="emocoes" class="section" style="display:none;">
     <h2>Sistema Nervoso e Emoções</h2>
     <p>O cérebro ativa áreas que controlam batimentos cardíacos e respiração conforme o estado emocional.</p>
     <p>Neurotransmissores como dopamina e serotonina regulam prazer, tristeza e ansiedade.</p>
     <p>O sistema nervoso conecta sentimentos internos com manifestações externas, como sorrisos e choros.</p>
   </section>
 
-  <section id="neuromitos" class="section">
+  <section id="neuromitos" class="section" style="display:none;">
     <h2>Neuromitos</h2>
     <ul>
       <li><strong>Usamos só 10% do cérebro:</strong> Falso. O cérebro funciona em múltiplas áreas, mesmo quando pensamos estar "ociosos".</li>
@@ -92,7 +80,7 @@
     </ul>
   </section>
 
-  <section id="quiz" class="section">
+  <section id="quiz" class="section" style="display:none;">
     <h2>Quiz Interativo</h2>
     <div class="quiz-question">
       <p><strong>1. Qual é a principal função dos neurônios?</strong></p>
@@ -129,5 +117,13 @@
 </footer>
 
 <script src="script.js"></script>
+<script>
+  function mostrarSecao(id) {
+    const secoes = document.querySelectorAll('main .section');
+    secoes.forEach(secao => secao.style.display = 'none');
+    document.getElementById(id).style.display = 'block';
+  }
+  window.onload = () => mostrarSecao('introducao');
+</script>
 </body>
 </html
