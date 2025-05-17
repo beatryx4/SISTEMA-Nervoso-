@@ -84,3 +84,30 @@ footer {
   .section {
     margin: 20px 10px;
   }
+/* Ajuste do menu fixo */
+header {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background-color: #ff6600;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.7);
+  z-index: 1000;
+  height: 60px; /* altura do menu */
+  display: flex;
+  align-items: center;
+}
+
+/* Espaço para o conteúdo não ficar atrás do menu */
+body {
+  padding-top: 60px; /* mesmo valor da altura do menu */
+}
+
+/* Estilo do menu */
+.menu ul {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+}
