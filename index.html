@@ -3,15 +3,14 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Curiosidades do Sistema Nervoso</title>
+  <title>O Fascinante Sistema Nervoso</title>
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-
 <header>
-  <nav class="menu" aria-label="Menu principal">
+  <nav class="menu">
     <ul>
-      <li><a href="#" onclick="mostrarSecao('introducao')">Início</a></li>
+      <li><a href="#" onclick="mostrarSecao('inicio')">Início</a></li>
       <li><a href="#" onclick="mostrarSecao('dor')">Dor</a></li>
       <li><a href="#" onclick="mostrarSecao('neuroplasticidade')">Neuroplasticidade</a></li>
       <li><a href="#" onclick="mostrarSecao('curiosidades')">Curiosidades</a></li>
@@ -24,54 +23,71 @@
 </header>
 
 <main>
-  <section id="introducao" class="section">
-  <img src="imagens/banner_sistema_nervoso.png" alt="Banner do sistema nervoso" class="imagem-banner">
-  <h1>O Fascinante Sistema Nervoso</h1>
-  <p>O sistema nervoso é a rede de controle que rege todas as funções do corpo humano, das ações mais simples aos pensamentos mais complexos.</p>
-  <p>Neste site, exploramos curiosidades, mistérios e o funcionamento desse sistema vital, com uma abordagem clara, visual e interativa.</p>
-</section>
+  <section id="inicio" class="section">
+    <img src="imagens/banner_sistema_nervoso.png" alt="Banner do sistema nervoso" class="imagem-banner">
+    <h1>O Fascinante Sistema Nervoso: Uma Jornada pela Anatomia</h1>
+    <p>Descubra os mistérios do sistema nervoso, a complexa rede que coordena tudo em nosso corpo. Nesta jornada acadêmica, exploraremos funcionamentos, descobertas e curiosidades que tornam essa estrutura essencial para a vida.</p>
+    <h2>Sistema Nervoso</h2>
+    <p>O sistema nervoso é a rede de controle que rege todas as funções do corpo humano, das ações mais simples aos pensamentos mais complexos.<br>
+    Neste site, exploramos curiosidades, mistérios e o funcionamento desse sistema vital, com uma abordagem clara, visual e interativa.</p>
+  </section>
 
   <section id="dor" class="section" style="display:none;">
-    <h2>Como a Dor Funciona</h2>
-    <p>Terminações nervosas captam estímulos nocivos e enviam sinais ao cérebro para processamento.</p>
-    <p>A dor é um mecanismo de proteção que nos alerta sobre danos ao corpo.</p>
-    <p><em>Curiosidade:</em> Algumas pessoas sentem dor de forma diferente por causa da genética e experiências pessoais.</p>
+    <h1>O que realmente acontece quando sentimos dor? A neurociência por trás das sensações</h1>
+    <div class="dinamico">
+      <h2>Como a dor funciona</h2>
+      <p>Terminações nervosas captam estímulos nocivos e enviam sinais ao cérebro para processamento.</p>
+      <h2>Por que sentimos dor</h2>
+      <p>A dor é um mecanismo de proteção que nos alerta sobre danos ao corpo.</p>
+      <h2>Curiosidade</h2>
+      <p>Algumas pessoas podem sentir dor de forma diferente devido à variação genética e experiências pessoais.</p>
+    </div>
   </section>
 
   <section id="neuroplasticidade" class="section" style="display:none;">
-    <h2>Neuroplasticidade</h2>
-    <p>É a capacidade do cérebro de se adaptar e modificar conexões ao longo da vida.</p>
-    <p>Importante para a aprendizagem, recuperação de lesões e desenvolvimento de habilidades.</p>
+    <h1>Neuroplasticidade: Como nosso cérebro se reconstrói constantemente</h1>
+    <div class="dinamico">
+      <h2>Definição</h2>
+      <p>Neuroplasticidade é a capacidade do cérebro de se adaptar e modificar conexões ao longo da vida.</p>
+      <h2>Importância</h2>
+      <p>Essa característica é fundamental para a aprendizagem, recuperação de lesões e memória.</p>
+      <h2>Fatores</h2>
+      <p>Exercícios, experiências e ambiente influenciam diretamente a plasticidade cerebral.</p>
+    </div>
   </section>
 
   <section id="curiosidades" class="section" style="display:none;">
-    <h2>Curiosidades Rápidas</h2>
-    <ul>
-      <li>O cérebro consome cerca de 20% da energia do corpo.</li>
-      <li>O corpo reage a estímulos antes de estarmos conscientes.</li>
-      <li>Reflexos são controlados pela medula espinhal.</li>
-    </ul>
+    <h1>Curiosidades surpreendentes: Você sabia que seu sistema nervoso processa informações mais rápido que um computador?</h1>
+    <div class="quadrinhos">
+      <div><h3>Velocidade dos sinais nervosos</h3><p>Os impulsos elétricos viajam a até 120 metros por segundo em neurônios especializados.</p></div>
+      <div><h3>Comparação com computadores</h3><p>O sistema nervoso processa e responde a estímulos em milissegundos, superando muitos dispositivos tecnológicos.</p></div>
+    </div>
   </section>
 
   <section id="sonhos" class="section" style="display:none;">
-    <h2>Por que Sonhamos?</h2>
-    <ol>
-      <li><strong>Consolidação:</strong> Organização de memórias.</li>
-      <li><strong>Simulação:</strong> Ensaio emocional.</li>
-      <li><strong>Mistério:</strong> Ainda estudado pela ciência.</li>
-    </ol>
+    <h1>Por que sonhamos? Teorias científicas e mistérios ainda não resolvidos</h1>
+    <ul class="lista-dinamica">
+      <li><strong>Teoria da Consolidação:</strong> Sonhos ajudam na organização e fortalecimento das memórias.</li>
+      <li><strong>Teoria da Simulação:</strong> Sonhar seria um ensaio mental de situações para preparar respostas emocionais.</li>
+      <li><strong>Mistério Persistente:</strong> Aspectos exatos dos sonhos ainda desafiam a ciência moderna.</li>
+    </ul>
   </section>
 
   <section id="emocoes" class="section" style="display:none;">
-    <h2>Sistema Nervoso e Emoções</h2>
-    <p>Neurotransmissores como dopamina e serotonina influenciam o humor, ansiedade e prazer.</p>
+    <h1>Sistema nervoso e emoções: Como nosso corpo reage biologicamente ao que sentimos?</h1>
+    <ul class="lista-dinamica">
+      <li><strong>Reação fisiológica:</strong> O cérebro ativa áreas que controlam batimentos cardíacos e respiração conforme o estado emocional.</li>
+      <li><strong>Neurotransmissores:</strong> Dopamina e serotonina regulam prazer, tristeza e ansiedade.</li>
+      <li><strong>Expressão emocional:</strong> O sistema nervoso conecta sentimentos internos com manifestações externas, como sorrisos e choros.</li>
+    </ul>
   </section>
 
   <section id="neuromitos" class="section" style="display:none;">
-    <h2>Neuromitos</h2>
-    <ul>
-      <li><strong>“Usamos só 10% do cérebro”:</strong> Falso.</li>
-      <li><strong>“Estilo de aprendizado único”:</strong> Não comprovado.</li>
+    <h1>Neuromitos: Verdades e mentiras sobre o cérebro que você precisa conhecer</h1>
+    <ul class="lista-dinamica">
+      <li><strong>Usamos apenas 10% do cérebro:</strong> Falso. O cérebro funciona em múltiplas áreas, mesmo quando pensamos estar "ociosos".</li>
+      <li><strong>Diferença entre cérebros masculino e feminino:</strong> Parcialmente falso. Diferenças existem, mas não determinam capacidades cognitivas superiores.</li>
+      <li><strong>Aprender melhor com estilo único:</strong> Não há evidências científicas claras; o aprendizado eficaz depende de múltiplas abordagens.</li>
     </ul>
   </section>
 
@@ -83,18 +99,11 @@
       <button onclick="respostaQuiz(this, false)">Produzir hormônios</button>
       <button onclick="respostaQuiz(this, false)">Armazenar gordura</button>
     </div>
-
-    <div class="quiz-question">
-      <p><strong>2. O que é neuroplasticidade?</strong></p>
-      <button onclick="respostaQuiz(this, true)">Capacidade do cérebro de se adaptar</button>
-      <button onclick="respostaQuiz(this, false)">Capacidade de correr rápido</button>
-      <button onclick="respostaQuiz(this, false)">Capacidade de digestão</button>
-    </div>
   </section>
 </main>
 
 <footer>
-  <p>Feira de Anatomia - Curiosidades do Sistema Nervoso - 2025</p>
+  <p>Feira de Anatomia - Sistema Nervoso - 2025</p>
 </footer>
 
 <script src="script.js"></script>
