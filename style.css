@@ -10,7 +10,7 @@ body {
   color: #E0E0E0;
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   line-height: 1.6;
-  padding: 60px 20px 40px 20px;
+  padding-top: 70px;
 }
 
 header {
@@ -26,51 +26,100 @@ header {
 .menu ul {
   list-style: none;
   display: flex;
+  flex-wrap: wrap;
   justify-content: center;
-  padding: 15px 0;
-}
-
-.menu ul li {
-  margin: 0 15px;
+  padding: 15px 10px;
+  gap: 10px;
 }
 
 .menu ul li a {
   color: #4A90E2;
   text-decoration: none;
   font-weight: 600;
-  font-size: 1rem;
-  padding: 8px 12px;
-  border-radius: 4px;
-  transition: background-color 0.3s, color 0.3s;
+  font-size: 0.95rem;
+  padding: 8px 14px;
+  border-radius: 5px;
+  transition: 0.3s;
 }
 
 .menu ul li a:hover,
 .menu ul li a:focus {
   background-color: #D9822B;
-  color: #121212;
+  color: #fff;
 }
 
 .section {
-  max-width: 800px;
+  max-width: 960px;
   margin: 40px auto;
-  padding: 25px 30px;
+  padding: 30px;
   background-color: #1E1E1E;
-  border-radius: 10px;
-  box-shadow: 0 2px 8px rgb(0 0 0 / 0.5);
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.3);
+  animation: fadeIn 0.6s ease;
 }
 
-h1, h2 {
+.section h1, .section h2, .section h3 {
   color: #D9822B;
+  margin-bottom: 12px;
 }
 
-p, li {
-  font-size: 1.05rem;
-  margin-bottom: 15px;
+.section p, .section li {
+  font-size: 1.1rem;
+  margin-bottom: 16px;
 }
 
-ul {
-  padding-left: 20px;
-  margin-bottom: 15px;
+.imagem-banner {
+  width: 100%;
+  max-width: 100%;
+  height: auto;
+  border-radius: 10px;
+  margin-bottom: 25px;
+  box-shadow: 0 0 20px rgba(255, 255, 255, 0.1);
+}
+
+.intro-text {
+  text-align: center;
+}
+
+.banner-container {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.lista-dinamica {
+  list-style: none;
+  padding-left: 0;
+}
+
+.lista-dinamica li {
+  background-color: #2A2A2A;
+  margin-bottom: 12px;
+  padding: 15px;
+  border-radius: 8px;
+  border-left: 5px solid #4A90E2;
+  transition: transform 0.3s;
+}
+
+.lista-dinamica li:hover {
+  transform: scale(1.02);
+}
+
+.quadrinhos {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: 16px;
+}
+
+.quadrinhos div {
+  background: #2A2A2A;
+  border-radius: 10px;
+  padding: 20px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.4);
+  transition: 0.3s ease;
+}
+
+.quadrinhos div:hover {
+  transform: translateY(-5px);
 }
 
 button {
@@ -82,7 +131,7 @@ button {
   border-radius: 6px;
   font-weight: 600;
   cursor: pointer;
-  transition: background-color 0.3s ease;
+  transition: 0.3s;
 }
 
 button:hover {
@@ -102,30 +151,29 @@ button.errado {
 
 footer {
   text-align: center;
-  margin-top: 40px;
-  color: #666;
+  padding: 20px;
+  color: #999;
   font-size: 0.9rem;
+  margin-top: 40px;
 }
 
-/* Responsividade para celular */
-@media (max-width: 600px) {
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(20px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+@media (max-width: 768px) {
   .menu ul {
     flex-direction: column;
-    gap: 10px;
+    align-items: center;
   }
-  .menu ul li {
-    margin: 0;
-  }
+
   .section {
-    margin: 20px 15px;
     padding: 20px;
+    margin: 20px 15px;
   }
-}
-.imagem-banner {
-  width: 100%;
-  max-width: 100%;
-  height: auto;
-  border-radius: 12px;
-  box-shadow: 0 0 20px rgba(0,0,0,0.6);
-  margin-bottom: 25px;
+
+  .quadrinhos {
+    grid-template-columns: 1fr;
+  }
 }
