@@ -2,11 +2,10 @@
 <html lang="pt-BR">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>O Fascinante Sistema Nervoso</title>
   <link rel="stylesheet" href="style.css" />
 </head>
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <body>
 <header>
   <nav class="menu">
@@ -25,36 +24,34 @@
 
 <main>
   <section id="inicio" class="section">
-    <img src="imagens/banner_sistema_nervoso.png.png" alt="Banner do sistema nervoso" class="imagem-banner">
-    <h1>O Fascinante Sistema Nervoso: Uma Jornada pela Anatomia</h1>
-    <p>Descubra os mistérios do sistema nervoso, a complexa rede que coordena tudo em nosso corpo. Nesta jornada acadêmica, exploraremos funcionamentos, descobertas e curiosidades que tornam essa estrutura essencial para a vida.</p>
-    <h2>Sistema Nervoso</h2>
-    <p>O sistema nervoso é a rede de controle que rege todas as funções do corpo humano, das ações mais simples aos pensamentos mais complexos.<br>
-    Neste site, exploramos curiosidades, mistérios e o funcionamento desse sistema vital, com uma abordagem clara, visual e interativa.</p>
+    <div class="banner-container">
+      <img src="imagens/banner_sistema_nervoso.png" alt="Banner do sistema nervoso" class="imagem-banner">
+    </div>
+    <div class="intro-text">
+      <h1>O Fascinante Sistema Nervoso: Uma Jornada pela Anatomia</h1>
+      <p>Descubra os mistérios do sistema nervoso, a complexa rede que coordena tudo em nosso corpo. Nesta jornada acadêmica, exploraremos funcionamentos, descobertas e curiosidades que tornam essa estrutura essencial para a vida.</p>
+      <h2>Sistema Nervoso</h2>
+      <p>O sistema nervoso é a rede de controle que rege todas as funções do corpo humano, das ações mais simples aos pensamentos mais complexos.<br>
+      Neste site, exploramos curiosidades, mistérios e o funcionamento desse sistema vital, com uma abordagem clara, visual e interativa.</p>
+    </div>
   </section>
 
   <section id="dor" class="section" style="display:none;">
     <h1>O que realmente acontece quando sentimos dor? A neurociência por trás das sensações</h1>
-    <div class="dinamico">
-      <h2>Como a dor funciona</h2>
-      <p>Terminações nervosas captam estímulos nocivos e enviam sinais ao cérebro para processamento.</p>
-      <h2>Por que sentimos dor</h2>
-      <p>A dor é um mecanismo de proteção que nos alerta sobre danos ao corpo.</p>
-      <h2>Curiosidade</h2>
-      <p>Algumas pessoas podem sentir dor de forma diferente devido à variação genética e experiências pessoais.</p>
-    </div>
+    <ul class="lista-dinamica">
+      <li><strong>Como a dor funciona:</strong> Terminações nervosas captam estímulos nocivos e enviam sinais ao cérebro para processamento.</li>
+      <li><strong>Por que sentimos dor:</strong> A dor é um mecanismo de proteção que nos alerta sobre danos ao corpo.</li>
+      <li><strong>Curiosidade:</strong> Algumas pessoas podem sentir dor de forma diferente devido à variação genética e experiências pessoais.</li>
+    </ul>
   </section>
 
   <section id="neuroplasticidade" class="section" style="display:none;">
     <h1>Neuroplasticidade: Como nosso cérebro se reconstrói constantemente</h1>
-    <div class="dinamico">
-      <h2>Definição</h2>
-      <p>Neuroplasticidade é a capacidade do cérebro de se adaptar e modificar conexões ao longo da vida.</p>
-      <h2>Importância</h2>
-      <p>Essa característica é fundamental para a aprendizagem, recuperação de lesões e memória.</p>
-      <h2>Fatores</h2>
-      <p>Exercícios, experiências e ambiente influenciam diretamente a plasticidade cerebral.</p>
-    </div>
+    <ul class="lista-dinamica">
+      <li><strong>Definição:</strong> Neuroplasticidade é a capacidade do cérebro de se adaptar e modificar conexões ao longo da vida.</li>
+      <li><strong>Importância:</strong> Essa característica é fundamental para a aprendizagem, recuperação de lesões e memória.</li>
+      <li><strong>Fatores:</strong> Exercícios, experiências e ambiente influenciam diretamente a plasticidade cerebral.</li>
+    </ul>
   </section>
 
   <section id="curiosidades" class="section" style="display:none;">
@@ -100,6 +97,45 @@
       <button onclick="respostaQuiz(this, false)">Produzir hormônios</button>
       <button onclick="respostaQuiz(this, false)">Armazenar gordura</button>
     </div>
+    <div class="quiz-question">
+      <p><strong>2. O que é neuroplasticidade?</strong></p>
+      <button onclick="respostaQuiz(this, true)">Capacidade do cérebro de se adaptar</button>
+      <button onclick="respostaQuiz(this, false)">Capacidade de correr rápido</button>
+      <button onclick="respostaQuiz(this, false)">Capacidade de digestão</button>
+    </div>
+    <div class="quiz-question">
+      <p><strong>3. Qual parte do sistema nervoso controla os reflexos?</strong></p>
+      <button onclick="respostaQuiz(this, true)">Medula espinhal</button>
+      <button onclick="respostaQuiz(this, false)">Córtex pré-frontal</button>
+      <button onclick="respostaQuiz(this, false)">Cerebelo</button>
+    </div>
+    <div class="quiz-question">
+      <p><strong>4. Qual neurotransmissor está associado à sensação de prazer?</strong></p>
+      <button onclick="respostaQuiz(this, true)">Dopamina</button>
+      <button onclick="respostaQuiz(this, false)">Cortisol</button>
+      <button onclick="respostaQuiz(this, false)">Adrenalina</button>
+    </div>
+    <p><strong>4. Qual das alternativas descreve corretamente uma função do sistema nervoso parassimpático?</strong></p>
+      <button onclick="respostaQuiz(this, false)">Acelera os batimentos cardíacos e inibe a digestão.</button>
+      <button onclick="respostaQuiz(this, true)">Diminui a frequência cardíaca e estimula a digestão.</button>
+      <button onclick="respostaQuiz(this, false)">Dilata as pupilas e estimula a liberação de adrenalina.</button>
+      <button onclick="respostaQuiz(this, false)">Prepara o corpo para situações de emergência ou fuga.</button>
+    </div>
+    <p><strong>4. Qual das seguintes funções é estimulada pelo sistema nervoso simpático?</strong></p>
+      <button onclick="respostaQuiz(this, false)">Aumento da digestão.</button>
+      <button onclick="respostaQuiz(this, false)">Redução da frequência cardíaca.</button>
+      <button onclick="respostaQuiz(this, true)">Dilatação das pupilas.</button>
+      <button onclick="respostaQuiz(this, false)"> Produção de saliva</button>
+    </div>
+    <p><strong>4. Qual é a principal função dos nervos sensoriais?</strong></p>
+      <button onclick="respostaQuiz(this, false)">Transmitir informações do cérebro para os músculos.</button>
+      <button onclick="respostaQuiz(this, true)">Transmitir informações dos órgãos sensoriais para o cérebro.</button>
+      <button onclick="respostaQuiz(this, false)">Produzir hormônios.</button>
+      </div>
+    <p><strong>4. O que acontece quando um nervo motor é lesionado?</strong></p>
+      <button onclick="respostaQuiz(this, false)">O corpo se torna mais flexível.</button>
+      <button onclick="respostaQuiz(this, true)">A comunicação entre o cérebro e os músculos é interrompida.</button>
+      <button onclick="respostaQuiz(this, false)">Os reflexos aumentam.</button>
   </section>
 </main>
 
