@@ -27,7 +27,7 @@
   <section id="introducao" class="section">
     <h1>O Fascinante Sistema Nervoso</h1>
     <p>O sistema nervoso é a rede de controle que rege todas as funções do corpo humano, das ações mais simples aos pensamentos mais complexos.</p>
-    <p>Neste site, exploraremos curiosidades, mistérios e o funcionamento desse sistema vital, com uma abordagem clara e interativa para você descobrir o quanto nosso corpo é incrível.</p>
+    <p>Neste site, exploramos curiosidades, mistérios e o funcionamento desse sistema vital, com uma abordagem clara, visual e interativa.</p>
   </section>
 
   <section id="dor" class="section" style="display:none;">
@@ -39,44 +39,38 @@
 
   <section id="neuroplasticidade" class="section" style="display:none;">
     <h2>Neuroplasticidade</h2>
-    <p>Neuroplasticidade é a capacidade do cérebro de se adaptar e modificar conexões ao longo da vida.</p>
-    <p>Essa característica é fundamental para a aprendizagem, recuperação de lesões e memória.</p>
-    <p>Exercícios, experiências e ambiente influenciam diretamente a plasticidade cerebral.</p>
+    <p>É a capacidade do cérebro de se adaptar e modificar conexões ao longo da vida.</p>
+    <p>Importante para a aprendizagem, recuperação de lesões e desenvolvimento de habilidades.</p>
   </section>
 
   <section id="curiosidades" class="section" style="display:none;">
     <h2>Curiosidades Rápidas</h2>
     <ul>
-      <li>O cérebro consome cerca de 20% da energia do corpo, mesmo pesando apenas 2% do peso total.</li>
-      <li>O corpo reage a estímulos antes mesmo de você estar consciente deles.</li>
-      <li>Reflexos são decisões automáticas da medula, que agem antes do cérebro.</li>
-      <li>O cérebro continua ativo à noite, organizando pensamentos e memórias.</li>
-      <li>Os neurônios nunca se tocam; comunicam-se por sinapses químicas.</li>
+      <li>O cérebro consome cerca de 20% da energia do corpo.</li>
+      <li>O corpo reage a estímulos antes de estarmos conscientes.</li>
+      <li>Reflexos são controlados pela medula espinhal.</li>
     </ul>
   </section>
 
   <section id="sonhos" class="section" style="display:none;">
     <h2>Por que Sonhamos?</h2>
     <ol>
-      <li><strong>Teoria da Consolidação:</strong> Sonhos ajudam na organização e fortalecimento das memórias.</li>
-      <li><strong>Teoria da Simulação:</strong> Sonhar seria um ensaio mental para preparar respostas emocionais.</li>
-      <li><strong>Mistério Persistente:</strong> Muitos aspectos dos sonhos ainda desafiam a ciência moderna.</li>
+      <li><strong>Consolidação:</strong> Organização de memórias.</li>
+      <li><strong>Simulação:</strong> Ensaio emocional.</li>
+      <li><strong>Mistério:</strong> Ainda estudado pela ciência.</li>
     </ol>
   </section>
 
   <section id="emocoes" class="section" style="display:none;">
     <h2>Sistema Nervoso e Emoções</h2>
-    <p>O cérebro ativa áreas que controlam batimentos cardíacos e respiração conforme o estado emocional.</p>
-    <p>Neurotransmissores como dopamina e serotonina regulam prazer, tristeza e ansiedade.</p>
-    <p>O sistema nervoso conecta sentimentos internos com manifestações externas, como sorrisos e choros.</p>
+    <p>Neurotransmissores como dopamina e serotonina influenciam o humor, ansiedade e prazer.</p>
   </section>
 
   <section id="neuromitos" class="section" style="display:none;">
     <h2>Neuromitos</h2>
     <ul>
-      <li><strong>Usamos só 10% do cérebro:</strong> Falso. O cérebro funciona em múltiplas áreas, mesmo quando pensamos estar "ociosos".</li>
-      <li><strong>Diferença entre cérebros masculino e feminino:</strong> Parcialmente falso. Diferenças existem, mas não determinam capacidades cognitivas superiores.</li>
-      <li><strong>Aprender melhor com um estilo único (visual, auditivo):</strong> Não há evidências claras; o aprendizado eficaz depende de múltiplas abordagens.</li>
+      <li><strong>“Usamos só 10% do cérebro”:</strong> Falso.</li>
+      <li><strong>“Estilo de aprendizado único”:</strong> Não comprovado.</li>
     </ul>
   </section>
 
@@ -91,23 +85,9 @@
 
     <div class="quiz-question">
       <p><strong>2. O que é neuroplasticidade?</strong></p>
-      <button onclick="respostaQuiz(this, true)">Capacidade do cérebro de se adaptar e modificar conexões</button>
+      <button onclick="respostaQuiz(this, true)">Capacidade do cérebro de se adaptar</button>
       <button onclick="respostaQuiz(this, false)">Capacidade de correr rápido</button>
       <button onclick="respostaQuiz(this, false)">Capacidade de digestão</button>
-    </div>
-
-    <div class="quiz-question">
-      <p><strong>3. Como o sistema nervoso processa a dor?</strong></p>
-      <button onclick="respostaQuiz(this, true)">Estímulos são captados e enviados ao cérebro</button>
-      <button onclick="respostaQuiz(this, false)">O corpo ignora a dor</button>
-      <button onclick="respostaQuiz(this, false)">A dor é gerada nos músculos</button>
-    </div>
-
-    <div class="quiz-question">
-      <p><strong>4. Por que sonhamos, segundo as teorias científicas?</strong></p>
-      <button onclick="respostaQuiz(this, true)">Para fortalecer memórias e ensaiar respostas emocionais</button>
-      <button onclick="respostaQuiz(this, false)">Para prever o futuro</button>
-      <button onclick="respostaQuiz(this, false)">Para desligar o cérebro</button>
     </div>
   </section>
 </main>
@@ -117,13 +97,5 @@
 </footer>
 
 <script src="script.js"></script>
-<script>
-  function mostrarSecao(id) {
-    const secoes = document.querySelectorAll('main .section');
-    secoes.forEach(secao => secao.style.display = 'none');
-    document.getElementById(id).style.display = 'block';
-  }
-  window.onload = () => mostrarSecao('introducao');
-</script>
 </body>
-</html
+</html>
