@@ -1,53 +1,60 @@
-/* Reset básico */
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
-
 body {
   background-color: #121212;
   color: #E0E0E0;
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   line-height: 1.6;
   padding-top: 70px;
+  margin: 0;
 }
 
-header {
+.menu-toggle {
+  background-color: #4A90E2;
+  color: white;
+  font-size: 1rem;
+  padding: 10px 16px;
+  cursor: pointer;
+  text-align: center;
   position: fixed;
   top: 0;
-  width: 100%;
+  left: 0;
+  z-index: 1001;
+  border-radius: 0 0 10px 0;
+}
+
+.menu {
   background-color: #1E1E1E;
-  border-bottom: 1px solid #333;
-  box-shadow: 0 1px 5px rgba(0,0,0,0.5);
-  z-index: 1000;
+  width: 100%;
+}
+
+.menu.oculto {
+  display: none;
 }
 
 .menu ul {
   list-style: none;
+  padding: 20px 10px;
+  margin: 0;
   display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  padding: 15px 10px;
+  flex-direction: column;
   gap: 10px;
+  text-align: center;
 }
 
 .menu ul li a {
   color: #4A90E2;
   text-decoration: none;
   font-weight: 600;
-  font-size: 0.95rem;
-  padding: 8px 14px;
+  font-size: 1rem;
+  padding: 10px;
   border-radius: 5px;
-  transition: 0.3s;
 }
 
-.menu ul li a:hover,
-.menu ul li a:focus {
+.menu ul li a:hover {
   background-color: #D9822B;
-  color: #fff;
+  color: white;
 }
 
+/* Seções e conteúdo */
 .section {
   max-width: 960px;
   margin: 40px auto;
@@ -77,15 +84,6 @@ header {
   box-shadow: 0 0 20px rgba(255, 255, 255, 0.1);
 }
 
-.intro-text {
-  text-align: center;
-}
-
-.banner-container {
-  text-align: center;
-  margin-bottom: 20px;
-}
-
 .lista-dinamica {
   list-style: none;
   padding-left: 0;
@@ -102,24 +100,6 @@ header {
 
 .lista-dinamica li:hover {
   transform: scale(1.02);
-}
-
-.quadrinhos {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
-  gap: 16px;
-}
-
-.quadrinhos div {
-  background: #2A2A2A;
-  border-radius: 10px;
-  padding: 20px;
-  box-shadow: 0 0 10px rgba(0,0,0,0.4);
-  transition: 0.3s ease;
-}
-
-.quadrinhos div:hover {
-  transform: translateY(-5px);
 }
 
 button {
@@ -160,61 +140,4 @@ footer {
 @keyframes fadeIn {
   from { opacity: 0; transform: translateY(20px); }
   to { opacity: 1; transform: translateY(0); }
-}
-
-@media (max-width: 768px) {
-  .menu ul {
-    flex-direction: column;
-    align-items: center;
-  }
-
-  .section {
-    padding: 20px;
-    margin: 20px 15px;
-  }
-
-  .quadrinhos {
-    grid-template-columns: 1fr;
-  }
-}
-.menu-toggle {
-  background-color: #4A90E2;
-  color: white;
-  font-size: 1rem;
-  padding: 10px 16px;
-  cursor: pointer;
-  text-align: center;
-  position: fixed;
-  top: 0;
-  left: 0;
-  z-index: 1001;
-}
-
-.menu.oculto {
-  display: none;
-}
-
-.menu ul {
-  background-color: #1E1E1E;
-  list-style: none;
-  padding: 20px 10px;
-  margin-top: 50px;
-  display: flex;
-  flex-direction: column;
-  gap: 10px;
-  text-align: center;
-}
-
-.menu ul li a {
-  color: #4A90E2;
-  text-decoration: none;
-  font-weight: 600;
-  font-size: 1rem;
-  padding: 10px;
-  border-radius: 5px;
-}
-
-.menu ul li a:hover {
-  background-color: #D9822B;
-  color: white;
 }
