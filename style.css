@@ -177,3 +177,44 @@ footer {
     grid-template-columns: 1fr;
   }
 }
+.menu-toggle {
+  background-color: #4A90E2;
+  color: white;
+  font-size: 1rem;
+  padding: 10px 16px;
+  cursor: pointer;
+  text-align: center;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 1001;
+}
+
+.menu.oculto {
+  display: none;
+}
+
+.menu ul {
+  background-color: #1E1E1E;
+  list-style: none;
+  padding: 20px 10px;
+  margin-top: 50px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  text-align: center;
+}
+
+.menu ul li a {
+  color: #4A90E2;
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 1rem;
+  padding: 10px;
+  border-radius: 5px;
+}
+
+.menu ul li a:hover {
+  background-color: #D9822B;
+  color: white;
+}
