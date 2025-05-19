@@ -54,7 +54,6 @@ body {
   color: white;
 }
 
-/* Seções e conteúdo */
 .section {
   max-width: 960px;
   margin: 40px auto;
@@ -102,6 +101,24 @@ body {
   transform: scale(1.02);
 }
 
+.quadrinhos {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: 16px;
+}
+
+.quadrinhos div {
+  background: #2A2A2A;
+  border-radius: 10px;
+  padding: 20px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.4);
+  transition: 0.3s ease;
+}
+
+.quadrinhos div:hover {
+  transform: translateY(-5px);
+}
+
 button {
   background-color: #4A90E2;
   color: #121212;
@@ -140,21 +157,4 @@ footer {
 @keyframes fadeIn {
   from { opacity: 0; transform: translateY(20px); }
   to { opacity: 1; transform: translateY(0); }
-}
-.quadrinhos {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
-  gap: 16px;
-}
-
-.quadrinhos div {
-  background: #2A2A2A;
-  border-radius: 10px;
-  padding: 20px;
-  box-shadow: 0 0 10px rgba(0,0,0,0.4);
-  transition: 0.3s ease;
-}
-
-.quadrinhos div:hover {
-  transform: translateY(-5px);
 }
