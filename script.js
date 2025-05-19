@@ -21,3 +21,7 @@ function respostaQuiz(botao, correto) {
 }
 
 window.onload = () => mostrarSecao('inicio');
+function toggleMenu() {
+  const menu = document.getElementById("menu");
+  menu.classList.toggle("oculto");
+}
