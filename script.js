@@ -1,3 +1,8 @@
+function toggleMenu() {
+  const menu = document.getElementById("menu");
+  menu.classList.toggle("oculto");
+}
+
 function mostrarSecao(id) {
   const secoes = document.querySelectorAll('main .section');
   secoes.forEach(secao => secao.style.display = 'none');
@@ -21,7 +26,3 @@ function respostaQuiz(botao, correto) {
 }
 
 window.onload = () => mostrarSecao('inicio');
-function toggleMenu() {
-  const menu = document.getElementById("menu");
-  menu.classList.toggle("oculto");
-}
