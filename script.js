@@ -1,11 +1,9 @@
-// Navegação entre abas
 function mostrarSecao(id) {
   const secoes = document.querySelectorAll('main .section');
   secoes.forEach(secao => secao.style.display = 'none');
   document.getElementById(id).style.display = 'block';
 }
 
-// Quiz
 function respostaQuiz(botao, correto) {
   const grupo = botao.parentElement.querySelectorAll("button");
   grupo.forEach(b => {
@@ -22,5 +20,4 @@ function respostaQuiz(botao, correto) {
   }
 }
 
-// Mostra a introdução por padrão ao abrir o site
-window.onload = () => mostrarSecao('introducao');
+window.onload = () => mostrarSecao('inicio');
